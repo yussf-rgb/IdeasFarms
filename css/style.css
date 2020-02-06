@@ -1,0 +1,228 @@
+/* general styling */
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.button_1 {
+  height: 38px;
+  background: #dc8e08f3;
+  border: 0;
+  padding: 0 30px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.button_1 {
+  cursor: pointer;
+}
+
+/* header */
+header {
+  background-color: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #dc8e08f3 3px solid;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header li {
+  display: inline;
+  padding: 0 20px;
+}
+
+header #brand {
+  float: left;
+}
+
+header brand h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: #dc8e08f3;
+
+  font-weight: bolder;
+}
+
+header a:hover {
+  color: #cccccc;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* show case */
+
+#showcase {
+  min-height: 400px;
+  background-image: url(../img/pineapple.jpg);
+  background-attachment: fixed;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+#showcase h1 {
+  padding-top: 60px;
+  font-size: 45px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+#showcase p {
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+#showcase .container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* email */
+#email {
+  padding: 15px;
+  color: #ffffff;
+  background-color: #35424a;
+}
+
+#email h1 {
+  float: left;
+}
+#email form {
+  float: right;
+  margin-top: 15px;
+}
+
+#email input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* boxes */
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+#boxes .box img {
+  width: 90px;
+}
+/* customers */
+#customers {
+  background-color: #35424a;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#customers .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#customers img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+#customers .custumer {
+  width: 25%;
+  text-align: center;
+  color: #f4f4f4;
+  border: 4px solid #dc8c08fe;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+#customers h3,
+#customers img {
+  margin: 0;
+}
+
+#customers .title {
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0 0 10 0;
+
+  padding: 0 0 10px 0;
+  text-transform: capitalize;
+}
+
+footer {
+  background-color: #dc8c08fe;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* about page */
+.dark {
+  padding: 15px;
+  background-color: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/* Services paeg */
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90;
+  padding: 5px;
+}
+
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+  background-color: #e6e6e6;
+}
